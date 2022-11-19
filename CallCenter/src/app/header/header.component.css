@@ -1,0 +1,50 @@
+
+#top-header{
+    font-family: “Helvetica Neue”, “Helvetica”, “Roboto”, “Arial”, sans-serif;
+    font-weight: bolder;
+    color: #FFFF;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    letter-spacing: 0px;
+    height: .75rem;
+    font-size: 12px;
+    padding: 12px;
+}
+
+#overall-links{
+    background-color:#F76902 ;
+    padding: .75rem;
+    display: flex;
+    justify-content: space-around;
+}
+#groups{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: .75rem;
+    padding-right: 40%;
+}
+
+
+#bottom-header{
+    padding: .75rem;
+}
+
+#header-name{
+    display: grid;
+    grid-template-columns: auto 40% 15%;
+
+}
+
+#sub-main-nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+#page-name{
+    font-family: “Helvetica Neue”, “Helvetica”, “Roboto”, “Arial”, sans-serif;
+    justify-self: center;
+    letter-spacing: -.05px;
+    font-size: 36px ;
+}

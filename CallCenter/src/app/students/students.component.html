@@ -1,0 +1,9 @@
+<div id="card-container">
+    <div class="student-card" *ngFor="let student of students">
+        <h1>{{student.studentName}}</h1>
+        <div class="content">
+            <img class="student-image" src="{{student.imageLink}}">
+            <p>{{student.about}}</p>
+        </div>
+    </div>
+</div>

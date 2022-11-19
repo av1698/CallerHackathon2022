@@ -1,4 +1,14 @@
-.container {
+
+
+html {
+    font-size: 14px;
+    min-height: 100%;
+    min-width: 375px;
+}
+
+body{
+    margin: 0;
+    height: 95vh;
 }
 
 section div {
@@ -6,6 +16,110 @@ section div {
     
 }
 
+#id topf {
+
+}
+
+.row h1 {
+    color: white;
+}
+
+.row {
+    background-color: black;
+}
+
+
+#fRITName img {
+     width: auto;
+     height: 41.61px;
+     filter: brightness(0) invert(1);
+     margin: 1.4rem;
+     display: inline-block;
+}
+
 #fRITName {
+   
+  
+
+}
+
+footer{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+
+
+ footer section {
+        display: grid;
+        margin: 0 auto;
+        grid-auto-columns: 1fr 1fr;
+        grid-template-areas: "tf tf"
+                              "mf1 mf2"
+                              "b  b";
+ }
+
+
+ @media screen and (min-width: 1109px){
+    footer section {
+       justify-content: center;
+       padding: 0 22vh !important;
+    }
+ }
+
+ .vl{
+     border-left: 2.2px solid white;
+     height: 4.5rem;
+     margin: .6rem 0;
+     left: 10.2rem;
+     position: absolute;
      
+ }
+
+#fRITfullname {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding-top: .65rem;
+}
+
+#fRITfullname  p {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.52rem;
+    line-height: 7px;
+
+}
+
+#midf1 p{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    line-height: 7.2px;
+    word-spacing: .02rem;
+}
+
+#midf2  div{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+}
+
+i {
+    color: white;
+}
+
+#topf {
+    grid-area: tf;
+}
+#mif1{
+    grid-area: mf1;
+}
+
+#midf2 {
+    grid-area: mf2;
+}
+
+#bottomf{
+    grid-area: b;
 }

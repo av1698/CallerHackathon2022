@@ -46,6 +46,7 @@ section div {
 footer{
     width: 100vw;
     margin: 0 auto;
+    background-color: black;
 }
 
 
@@ -53,26 +54,65 @@ footer{
  footer section {
         display: grid;
         margin: 0 auto;
-        grid-auto-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "tf tf"
                               "mf1 mf2"
                               "b  b";
  }
 
 
- @media screen and (min-width: 1109px){
+#bottomf div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+    grid-row-gap: .5rem;
+    margin: 2rem auto;
+    padding-left: 2rem;
+}
+
+#bottomf div h1{
+    margin: .2rem;
+    font-size: 3rem;
+}
+
+
+ @media screen and (min-width: 1289px){
     footer section {
-       justify-content: center;
-       padding: 0 22vh !important;
+        width: 80% !important;
+        margin: 0 auto !important;
+  
+        grid-template-columns: 1fr 1fr 15%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "tf mf1 mf2"
+                              "b  b b"
+                              "b  b b";
+    }
+
+    #midf1 p {
+        color: white;
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        line-height: 7.2px;
+        word-spacing: .02rem;
+    }
+
+    #midf2 div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
     }
  }
+
+
 
  .vl{
      border-left: 2.2px solid white;
      height: 4.5rem;
-     margin: .6rem 0;
-     left: 10.2rem;
-     position: absolute;
+     margin-top: .6rem;
+     margin-bottom: .6rem;
+     
+
+     right: .6rem;
+     position: relative;
      
  }
 
@@ -88,25 +128,39 @@ footer{
     color: white;
     font-size: 1.52rem;
     line-height: 7px;
-
+    
 }
 
-#midf1 p{
+#midf1 p {
     color: white;
     margin-top: 1rem;
     margin-left: 1.2rem;
-    line-height: 7.2px;
+    line-height: 10.9px;
     word-spacing: .02rem;
+   
+    word-break: break-word;
+    word-wrap: normal;
 }
 
-#midf2  div{
-    display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+#midf1 p:nth-child(1) {
+    padding-right: 2rem;
+    line-height: 1.4rem;
 }
+
+#midf2 div {
+    display: grid;
+    margin: 0;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 120%;
+}
+
+
+
 
 i {
     color: white;
+   
 }
 
 #topf {
@@ -122,4 +176,8 @@ i {
 
 #bottomf{
     grid-area: b;
+}
+
+.blank {
+    grid-area:bl;
 }

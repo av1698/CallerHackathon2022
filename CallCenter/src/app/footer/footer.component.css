@@ -79,7 +79,7 @@ footer section {
     width: 90% !important;
     margin: 0 auto !important;
 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr .9fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:  "tf mf1 mf2"
                               "b  b b";

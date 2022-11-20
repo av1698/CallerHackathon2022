@@ -1,11 +1,10 @@
 #card-container{
-    
+    font-family: “Helvetica Neue”, “Helvetica”, “Roboto”, “Arial”, sans-serif;
 }
 
 .student-card{
     margin: auto;
     width: 30%;
-    background-color: beige;
     padding: 3rem;
     margin-bottom: 2rem;
     width: 70%;
@@ -17,8 +16,13 @@
 }
 
 
-img{
+.student-image{
     width: 70%;
     height: auto;
-    padding-left: 2rem;
+    border-radius: 15px;
+}
+
+h1{
+    font-weight: bolder;
+
 }

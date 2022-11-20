@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { StudentsComponent } from './students/students.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

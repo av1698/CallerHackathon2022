@@ -6,7 +6,7 @@ exports.getAllStudents = async (req, res, next) => {
 };
 
 exports.postStudent = async (req, res, next) => {
-    const postRepsonse = await Student.post(req, body, item);
+    const postResponse = await Student.post(req, body, item);
     res.status(201).json(postResponse);
 };
 

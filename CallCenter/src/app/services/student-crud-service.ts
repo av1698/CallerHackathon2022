@@ -10,7 +10,7 @@ import { Student } from "src/app/models/Student";
   providedIn: "root",
 })
 export class StudentCrudService {
-  private url = "http://localhost:4200/";
+  private url = "http://localhost:4200/students";
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
@@ -24,11 +24,6 @@ export class StudentCrudService {
     return this.http
       .get<Student[]>(this.url, { responseType: "json" })
       .pipe(
-        tap((_) => console.log("fetched groceries")),
+        tap((_) => console.log("hehe")),
       );
-  }
-
-  post(item: Partial<Student>): Observable<any> {
-    return this.http
-      .post<Partial<Student>>(this.url, item, this.httpOptions)
-  }};
+  }}

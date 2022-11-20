@@ -1,16 +1,32 @@
 #main-container{
-    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: .5fr.5fr;
 }
 #top-header{
     font-family: “Helvetica Neue”, “Helvetica”, “Roboto”, “Arial”, sans-serif;
     font-weight: bolder;
     color: #FFFF;
-    display: grid;
-    grid-template-columns: 80% 20%;
     letter-spacing: 0px;
     height: 1rem;
     font-size: 12px;
     padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr .3fr;
+}
+
+@media screen and (min-width: 1289px){
+    #top-header{
+      grid-template-columns: 1fr .3fr;
+      grid-template-rows: 1fr !important;
+    }
+
+  #groups a{
+
+    padding-top: .3rem !important;
+    margin-top: .7rem !important;
+  }
+
 }
 
 #overall-links{
@@ -23,24 +39,34 @@
     background-color: black;
     display: flex;
     justify-content: space-around;
-    padding: .75rem;
-    padding-right: 40%;
+
+}
+
+#groups a{
+  margin: 0 .05rem;
+  padding: .3rem 1.2rem .3rem .15rem;
+}
+
+#overall-links a{
+  padding: .2rem 0 .2rem 0;
 }
 
 
 #bottom-header{
-    padding: .75rem;
+    padding-top: .75rem;
+
 }
 
 #header-name{
     display: grid;
-    grid-template-columns: auto 40% 15%;
+    grid-template-columns: .2fr .7fr .01fr;
 
 }
 
 #sub-main-nav{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: .2rem;
     align-items: center;
 }
 
